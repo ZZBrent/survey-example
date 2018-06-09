@@ -1,0 +1,135 @@
+<style type="text/css">
+.form{
+    width: 450px;
+    font-size: 16px;
+    background: #495C70;
+    padding: 30px 30px 15px 30px;
+    border: 5px solid #53687E;
+}
+.form input[type=submit],
+.form input[type=button],
+.form input[type=text],
+.form input[type=email],
+.form textarea,
+.form label
+{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    color: #fff;
+
+}
+.form label {
+    display:block;
+    margin-bottom: 10px;
+}
+.form label > span{
+    display: inline-block;
+    float: left;
+    width: 150px;
+}
+.form input[type=text],
+.form input[type=email] 
+{
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #83A4C5;
+    width: 275px;
+    outline: none;
+    padding: 0px 0px 0px 0px;
+    font-style: italic;
+}
+.form textarea{
+    font-style: italic;
+    padding: 0px 0px 0px 0px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px dashed #83A4C5;
+    width: 275px;
+    overflow: hidden;
+    resize:none;
+    height:20px;
+}
+
+.form textarea:focus, 
+.form input[type=text]:focus,
+.form input[type=email]:focus,
+.form input[type=email] :focus
+{
+    border-bottom: 1px dashed #D9FFA9;
+}
+
+.form input[type=submit],
+.form input[type=button]{
+    background: #576E86;
+    border: none;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+    color: #A8BACE;
+}
+.form input[type=submit]:hover,
+.form input[type=button]:hover{
+background: #394D61;
+}
+
+h1, p {
+  color: white;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #cccccc;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #cccccc;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #cccccc;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #cccccc;
+}
+</style>
+
+<div class="form">
+<h1 id="title">
+  What do you think of my FreeCodeCamp Portfolio?
+</h1>
+<p id="description">
+  The purpose of this survey is to complete the requirements for a FreeCode Camp certification.
+</p>
+<form id="survey-form">
+  <label id="name-label">Name:</label>
+  <input type="text" name="name" id="name" placeholder="Put your name here" required><br>
+  <br>
+  <label id="email-label">Email:</label>
+  <input type="email" name="email" id="email" placeholder="Put your email here" required><br>
+  <br>
+  <label id="number-label">Number:</label>
+  <input type="number" name="number" id="number" min="1" max="10" placeholder="Put your number here" required>
+  <br>
+  <br>
+  <select name="dropdown" id="dropdown">
+    <option value="pick">Pick me!</option>
+    <option value="choose">Choose me!</option>
+    <option value="click">Click me!</option>
+  </select>
+  <br>
+  <p>Pick your poision:</p>
+ <p>Poison 1 <input type="radio" value="1" name="radio"></input>
+Poison 2 <input type="radio" value="2" name="radio"></input>
+Poison 3 <input type="radio" value="3" name="radio"></input>
+</p>
+<p>
+Check this out:
+<input type="checkbox" name="check1" value="1"></input>
+<br><br>
+And this:
+<input type="checkbox" name="check2" value="2"></input>
+</p>
+<p>Please include additional comments below:</p>
+<textarea></textarea>
+<br>
+<input type="submit" id="submit"></input>
+</form>
+</div>
+<!--A special thanks to Saran from Sanwebe for providing most of the CSS on this one to make it look great!-->
